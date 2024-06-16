@@ -1,6 +1,6 @@
 <?php
 session_start();
-define('DB_SERVER', 'MySQL-8.0');
+define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_NAME', 'TestTaskDB');
