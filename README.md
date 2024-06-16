@@ -2,7 +2,7 @@
 
 Вход через админа = директор: direktor / direktor
 
-Вход через ученика: ilnur/123, alex/987 ,polina/456
+Вход через ученика: alex/123, nikitin/987 ,torg/456 ,artem/12345678
 
 ссылка на сайт: http://noobland.tplinkdns.com/cybercity/source/authenticate.php
 
