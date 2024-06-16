@@ -57,6 +57,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["username"]) && isset($
                     <input type="text" name="patronymic" placeholder="Patronymic" required>
                     <label for="dob">Date of birth</label>
                     <input type="date" name="dob" required>
+
+
+                    <select id="userType" required>
+                        <option value="">Выберите тип пользователя...</option>
+                        <option value="student">Студент</option>
+                        <option value="teacher">Учитель</option>
+                    </select>
+
+                    <div id="subjectFields" class="hidden grid-container">
+                        <h2>Выберите предметы:</h2>
+                        <label><input type="checkbox"  value="algebra">Алгебра</label>
+                        <label><input type="checkbox"  value="chemistry">Химия</label>
+                        <label><input type="checkbox"  value="biology">Биология</label>
+                        <label><input type="checkbox"  value="rus_lang">Русский язык</label>
+                        <label><input type="checkbox"  value="history"> История</label>
+                    </div>
+
+
                     <input type="submit" value="Create user">
                 </form>
                 <a href="../source/MainPage.php">Go back</a>

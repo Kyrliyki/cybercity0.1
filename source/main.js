@@ -19,3 +19,19 @@ document.getElementById('themeToggle').addEventListener('change', function() {
 if(currentTheme === 'dark'){
     document.getElementById('themeToggle').checked = true;
     }
+
+const userTypeSelect = document.getElementById('userType');
+const subjectFields = document.getElementById('subjectFields');
+
+userTypeSelect.addEventListener('change', function() {
+
+    subjectFields.classList.add('hidden');
+
+    if (userTypeSelect.value === 'teacher') {
+        subjectFields.classList.remove('hidden');
+    }
+    else {
+        subjectFields.classList.add('hidden')
+    }
+});
+
