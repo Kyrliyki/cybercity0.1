@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     
 </head>
@@ -19,6 +19,7 @@
             </div>
         </div>
         <div class="right">
+            <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
                 <h2>This is your grades</h2>
                 <?php
@@ -34,14 +35,15 @@
                         $result = $stmt->get_result();
 
                         if ($result->num_rows > 0) {
-                            echo "<table>
+                            echo "<table class='table-2'>
+                                    <thead>
                                     <tr>
                                         <th>Math</th>
                                         <th>Russian</th>
                                         <th>Biology</th>
                                         <th>Chemistry</th>
                                         <th>History</th>
-                                    </tr>";
+                                    </tr></thead><tbody>";
                             while ($row = $result->fetch_assoc()) {
                                 echo "<tr>";
                                 echo "<td>" . $row["algebra"] . "</td>";
@@ -51,7 +53,7 @@
                                 echo "<td>" . $row["History"] . "</td>";
                                 echo "</tr>";
                             }
-                            echo "</table>";
+                            echo "</tbody></table>";
                         } else {
                             echo "<p>No grades found for this user.</p>";
                         }

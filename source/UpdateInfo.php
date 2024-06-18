@@ -23,6 +23,7 @@ require_once "config.php";
 				</div>
 			</div>
 			<div class="right">
+                <a class="offcanvas"><span></span><span></span><span></span></a>
 				<div class="content">
 				<?php
 					if($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["id"])){

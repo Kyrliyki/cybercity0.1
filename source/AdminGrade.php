@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Оценки</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8" />
 </head>
 <link rel="stylesheet" href="main.css">
@@ -18,6 +19,7 @@
             </div>
         </div>
         <div class="right">
+            <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
                 <h2>Change students grades</h2>
 				<?php
@@ -26,15 +28,17 @@
 				$sql = "SELECT *
 						FROM users";
 				if($result = $DataBase->query($sql)){
-					echo "<table>
-							<tr>
+					echo "<table class='table-2'>
+                            <thead>
+                            <tr>
 								<th>Login &nbsp</th>
 								<th>Math &nbsp</th>
 								<th>Russian &nbsp</th>
 								<th>Biology &nbsp</th>
 								<th>Chemistry &nbsp</th>
 								<th>History &nbsp</th>
-							</tr>";
+							</tr>
+                            </thead><tbody>";
 					foreach($result as $row){
 						if ($row["status"] != 'admin'){
 							echo "<tr>";
@@ -49,7 +53,7 @@
 						}
 						
 					}
-					echo "</table>";
+					echo "</tbody></table>";
 					$result->free();
 				} else{
 					echo "Ошибка: " . $DataBase->error;
