@@ -31,7 +31,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 					</div>
 				</div>
 				<div class="right">
-					<div class="content" style="max-width: 600px;">
+                    <a class="offcanvas"><span></span><span></span><span></span></a>
+					<div class="content">
 						<h1>Hello <b><?php echo $_SESSION["username"]; ?></b></h1>
 						<div style="display: flex; align-items: center; justify-content: space-between;">
 							<h2>Create a user to log in</h2>
@@ -67,6 +68,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 					</div>
 				</div>
 				<div class="right">
+                    <a class="offcanvas"><span></span><span></span><span></span></a>
 					<div class="content" style="max-width: 600px;">
 						<h1>Hello <b><?php echo $_SESSION["username"]; ?></b></h1>
 						<div style="display: flex; align-items: center; justify-content: space-between;">
