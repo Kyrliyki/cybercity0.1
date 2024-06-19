@@ -3,8 +3,9 @@
 <head>
 <title>Информация</title>
 <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<link rel="stylesheet" href="main.css">
 <body>
 <div class="container">
         <div class="left">
@@ -18,6 +19,7 @@
             </div>
         </div>
         <div class="right">
+            <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content" style="max-width: 900px;">
                 <h2>Change students grades</h2>
 				<?php
@@ -80,7 +82,7 @@
 
 
 				if($result = $DataBase->query($sql)){?>
-						<table>
+						<table class="table-2"><thead>
 							<tr>
 								<th>id &nbsp</th>
 								<th>Login &nbsp</th>
@@ -89,7 +91,7 @@
 								<th>Name &nbsp</th>
 								<th>Patronymic &nbsp</th>
 								<th>Date of birth &nbsp</th>
-							</tr>
+							</tr></thead><tbody>
 					<?php
 					foreach($result as $row){
 						if ($row["status"] != 'admin'){
@@ -112,7 +114,7 @@
 						}
 						
 					}
-					echo "</table>";
+					echo "</tbody></table>";
 					$result->free();
 				} else{
 					echo "Error: " . $DataBase->error;

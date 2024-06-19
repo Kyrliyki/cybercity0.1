@@ -31,6 +31,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 					</div>
 				</div>
 				<div class="right">
+                    <a class="offcanvas"><span></span><span></span><span></span></a>
 					<div class="content" style="max-width: 600px;">
 						<h1>Hello <b><?php echo $_SESSION["username"]; ?></b></h1>
 						<div style="display: flex; align-items: center; justify-content: space-between;">
@@ -63,7 +64,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </div>
         </div>
         <div class="right">
-           
+            <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content" style="max-width: 600px;">
                 <h1>Привет <b><?php echo $_SESSION["username"]; ?></b></h1>
                 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -107,6 +108,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 			</div>
 		</div>
 		<div class="right">
+            <a class="offcanvas"><span></span><span></span><span></span></a>
 			<div class="content" style="max-width: 600px;">
 				<h1>Hello <b><?php echo $_SESSION["username"]; ?></b></h1>
 				<?php if($_SESSION['algebra'] === 1){?>

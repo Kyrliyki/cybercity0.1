@@ -3,8 +3,9 @@
 <head>
 <title>Оценки</title>
 <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
 </head>
-<link rel="stylesheet" href="main.css">
 <body>
 <div class="container">
         <div class="left">
@@ -19,6 +20,7 @@
         </div>
         <?php if($_GET["id_object"]==2){?>
         <div class="right">
+            <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
                 <h2>Change students grades</h2>
 				<?php
@@ -28,7 +30,7 @@
 						FROM rus AS t1 JOIN users AS t2
                         WHERE t1.id_users=t2.id";
 				if($result = $DataBase->query($sql)){
-					echo "<table>
+					echo "<table class='table-2'><thead>
                             <tr>
                                 <th>Surname &nbsp</th>
                                 <th>11.01 &nbsp</th>
@@ -46,7 +48,7 @@
                                 <th>20.09 &nbsp</th>
                                 <th>08.11 &nbsp</th>
                                 <th>28.11 &nbsp</th>
-                            </tr>"; //rus
+                            </tr></thead><tbody>"; //rus
                             
                            
                     foreach($result as $row){
@@ -72,7 +74,7 @@
                             echo "</tr>"; //rus
                         }
 					}
-					echo "</table>";
+					echo "</tbody></table>";
 					$result->free();
 				} else{
 					echo "Ошибка: " . $DataBase->error;
@@ -85,6 +87,7 @@
         <?}
         if($_GET["id_object"]==5){?>
         <div class="right">
+            <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
                 <h2>Change students grades</h2>
 				<?php
@@ -94,7 +97,7 @@
 						FROM History AS t1 JOIN users AS t2
                         WHERE t1.id_users=t2.id";
 				if($result = $DataBase->query($sql)){
-					echo "<table>
+					echo "<table class='table-2'><thead>
                             <tr>
                                 <th>Login &nbsp</th>
                                 <th>03.01 &nbsp</th>
@@ -112,7 +115,7 @@
                                 <th>09.11 &nbsp</th>
                                 <th>06.12 &nbsp</th>
                                 <th>18.12 &nbsp</th>
-                            </tr>"; //history
+                            </tr></thead><tbody>"; //history
                             
                             
                     foreach($result as $row){
@@ -138,7 +141,7 @@
                                 echo "</tr>"; //history
                         }
 					}
-					echo "</table>";
+					echo "</tbody></table>";
 					$result->free();
 				} else{
 					echo "Ошибка: " . $DataBase->error;
@@ -151,6 +154,7 @@
         <?}
         if($_GET["id_object"]==4){?>
         <div class="right">
+            <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
                 <h2>Change students grades</h2>
 				<?php
@@ -160,7 +164,7 @@
 						FROM Chemistry AS t1 JOIN users AS t2
                         WHERE t1.id_users=t2.id";
 				if($result = $DataBase->query($sql)){
-					echo "<table>
+					echo "<table class='table-2'><thead>
                             <tr>
                                 <th>Login &nbsp</th>
                                 <th>14.01 &nbsp</th>
@@ -178,7 +182,7 @@
                                 <th>18.09 &nbsp</th>
                                 <th>12.10 &nbsp</th>
                                 <th>09.11 &nbsp</th>
-                            </tr>"; //chemistry
+                            </tr></thead><tbody>"; //chemistry
                     foreach($result as $row){
                         if ($row["status"] != 'admin' && $row["status"] != 'teacher'){
                             echo "<tr>";
@@ -202,7 +206,7 @@
                                 echo "</tr>"; //chemistry
                         }
 					}
-					echo "</table>";
+					echo "</tbody></table>";
 					$result->free();
 				} else{
 					echo "Ошибка: " . $DataBase->error;
@@ -215,6 +219,7 @@
         <?}
         if($_GET["id_object"]==1){?>
         <div class="right">
+            <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
                 <h2>Change students grades</h2>
 				<?php
@@ -224,7 +229,7 @@
 						FROM algebra AS t1 JOIN users AS t2
                         WHERE t1.id_users=t2.id";
 				if($result = $DataBase->query($sql)){
-					echo "<table>
+					echo "<table class='table-2'><thead>
                             <tr> 
                                 <th>Login &nbsp</th>
                                 <th>05.01 &nbsp</th>
@@ -242,7 +247,7 @@
                                 <th>30.08 &nbsp</th>
                                 <th>09.09 &nbsp</th>
                                 <th>07.12 &nbsp</th>
-                            </tr>"; //algebra
+                            </tr></thead><tbody>"; //algebra
                     foreach($result as $row){
                         if ($row["status"] != 'admin' && $row["status"] != 'teacher'){
                             echo "<tr>";
@@ -266,7 +271,7 @@
                             echo "</tr>"; //algebra
                         }
 					}
-					echo "</table>";
+					echo "</tbody></table>";
 					$result->free();
 				} else{
 					echo "Ошибка: " . $DataBase->error;
@@ -279,6 +284,7 @@
         <?}
         if($_GET["id_object"]==3){?>
         <div class="right">
+            <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
                 <h2>Change students grades</h2>
 				<?php
@@ -288,7 +294,7 @@
 						FROM Biology AS t1 JOIN users AS t2
                         WHERE t1.id_users=t2.id";
 				if($result = $DataBase->query($sql)){
-					echo "<table>
+					echo "<table class='table-2'><thead>
                             <tr>
                                 <th>Login &nbsp</th>
                                 <th>07.01 &nbsp</th>
@@ -306,7 +312,7 @@
                                 <th>21.07 &nbsp</th>
                                 <th>12.09 &nbsp</th>
                                 <th>27.10 &nbsp</th>
-                            </tr>"; //biology
+                            </tr></thead><tbody>"; //biology
                     foreach($result as $row){
                         if ($row["status"] != 'admin' && $row["status"] != 'teacher'){
                             echo "<tr>";
@@ -330,7 +336,7 @@
                             echo "</tr>"; //biology
                         }
 					}
-					echo "</table>";
+					echo "</tbody></table>";
 					$result->free();
 				} else{
 					echo "Ошибка: " . $DataBase->error;
