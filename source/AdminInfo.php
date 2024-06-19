@@ -21,7 +21,7 @@
         <div class="right">
             <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content" style="max-width: 900px;">
-                <h2>Изменение оценок</h2>
+                <h2>Изменение данных</h2>
 				<?php
 				require_once "config.php";
 
