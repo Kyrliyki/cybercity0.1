@@ -55,21 +55,21 @@ require_once "config.php";
 									echo "<h3>Обновление оценок</h3>
 									<form method='post'>
 										<input type='hidden' name='id' value='$userid' />
-										<p>05.01: <input type='number' name='data1' value='$data1' /></p>
-										<p>08.02: <input type='number' name='data2' value='$data2' /></p>
-										<p>09.02: <input type='number' name='data3' value='$data3' /></p>
-										<p>23.02: <input type='number' name='data4' value='$data4' /></p>
-										<p>01.03: <input type='number' name='data5' value='$data5' /></p>
-										<p>25.03: <input type='number' name='data6' value='$data6' /></p>
-										<p>02.04: <input type='number' name='data7' value='$data7' /></p>
-										<p>20.04: <input type='number' name='data8' value='$data8' /></p>
-										<p>27.05: <input type='number' name='data9' value='$data9' /></p>
-										<p>13.06: <input type='number' name='data10' value='$data10' /></p>
-										<p>12.07: <input type='number' name='data11' value='$data11' /></p>
-										<p>17.07: <input type='number' name='data12' value='$data12' /></p>
-										<p>30.08: <input type='number' name='data13' value='$data13' /></p>
-										<p>09.09: <input type='number' name='data14' value='$data14' /></p>
-										<p>07.12: <input type='number' name='data15' value='$data15' /></p>
+										<p>05.01: <input type='text' class='modific' name='data1' value='$data1' /></p>
+										<p>08.02: <input type='text' class='modific' name='data2' value='$data2' /></p>
+										<p>09.02: <input type='text' class='modific' name='data3' value='$data3' /></p>
+										<p>23.02: <input type='text' class='modific' name='data4' value='$data4' /></p>
+										<p>01.03: <input type='text' class='modific' name='data5' value='$data5' /></p>
+										<p>25.03: <input type='text' class='modific' name='data6' value='$data6' /></p>
+										<p>02.04: <input type='text' class='modific' name='data7' value='$data7' /></p>
+										<p>20.04: <input type='text' class='modific' name='data8' value='$data8' /></p>
+										<p>27.05: <input type='text' class='modific' name='data9' value='$data9' /></p>
+										<p>13.06: <input type='text' class='modific' name='data10' value='$data10' /></p>
+										<p>12.07: <input type='text' class='modific' name='data11' value='$data11' /></p>
+										<p>17.07: <input type='text' class='modific' name='data12' value='$data12' /></p>
+										<p>30.08: <input type='text' class='modific' name='data13' value='$data13' /></p>
+										<p>09.09: <input type='text' class='modific' name='data14' value='$data14' /></p>
+										<p>07.12: <input type='text' class='modific' name='data15' value='$data15' /></p>
 										<input type='submit' value='Сохранить'>
 									</form>"; //algebra
 								}
@@ -163,21 +163,21 @@ require_once "config.php";
 									echo "<h3>Обновление оценок</h3>
 									<form method='post'>
 										<input type='hidden' name='id' value='$userid' />
-										<p>11.01: <input type='number' name='data1' value='$data1' /></p>
-										<p>23.02: <input type='number' name='data2' value='$data2' /></p>
-										<p>29.02: <input type='number' name='data3' value='$data3' /></p>
-										<p>25.03: <input type='number' name='data4' value='$data4' /></p>
-										<p>08.04: <input type='number' name='data5' value='$data5' /></p>
-										<p>02.05: <input type='number' name='data6' value='$data6' /></p>
-										<p>09.06: <input type='number' name='data7' value='$data7' /></p>
-										<p>30.06: <input type='number' name='data8' value='$data8' /></p>
-										<p>21.07: <input type='number' name='data9' value='$data9' /></p>
-										<p>16.08: <input type='number' name='data10' value='$data10' /></p>
-										<p>10.09: <input type='number' name='data11' value='$data11' /></p>
-										<p>12.09: <input type='number' name='data12' value='$data12' /></p>
-										<p>20.09: <input type='number' name='data13' value='$data13' /></p>
-										<p>08.11: <input type='number' name='data14' value='$data14' /></p>
-										<p>28.11: <input type='number' name='data15' value='$data15' /></p>
+										<p>11.01: <input type='text' class='modific' name='data1' value='$data1' /></p>
+										<p>23.02: <input type='text' class='modific' name='data2' value='$data2' /></p>
+										<p>29.02: <input type='text' class='modific' name='data3' value='$data3' /></p>
+										<p>25.03: <input type='text' class='modific' name='data4' value='$data4' /></p>
+										<p>08.04: <input type='text' class='modific' name='data5' value='$data5' /></p>
+										<p>02.05: <input type='text' class='modific' name='data6' value='$data6' /></p>
+										<p>09.06: <input type='text' class='modific' name='data7' value='$data7' /></p>
+										<p>30.06: <input type='text' class='modific' name='data8' value='$data8' /></p>
+										<p>21.07: <input type='text' class='modific' name='data9' value='$data9' /></p>
+										<p>16.08: <input type='text' class='modific' name='data10' value='$data10' /></p>
+										<p>10.09: <input type='text' class='modific' name='data11' value='$data11' /></p>
+										<p>12.09: <input type='text' class='modific' name='data12' value='$data12' /></p>
+										<p>20.09: <input type='text' class='modific' name='data13' value='$data13' /></p>
+										<p>08.11: <input type='text' class='modific' name='data14' value='$data14' /></p>
+										<p>28.11: <input type='text' class='modific' name='data15' value='$data15' /></p>
 										<input type='submit' value='Сохранить'>
 									</form>"; //rus
 								}
@@ -273,21 +273,21 @@ require_once "config.php";
 									echo "<h3>Обновление оценок</h3>
 									<form method='post'>
 										<input type='hidden' name='id' value='$userid' />
-										<p>07.01: <input type='number' name='data1' value='$data1' /></p>
-										<p>28.01: <input type='number' name='data2' value='$data2' /></p>
-										<p>23.02: <input type='number' name='data3' value='$data3' /></p>
-										<p>07.03: <input type='number' name='data4' value='$data4' /></p>
-										<p>13.03: <input type='number' name='data5' value='$data5' /></p>
-										<p>29.03: <input type='number' name='data6' value='$data6' /></p>
-										<p>07.04: <input type='number' name='data7' value='$data7' /></p>
-										<p>10.04: <input type='number' name='data8' value='$data8' /></p>
-										<p>22.04: <input type='number' name='data9' value='$data9' /></p>
-										<p>22.05: <input type='number' name='data10' value='$data10' /></p>
-										<p>02.06: <input type='number' name='data11`' value='$data11' /></p>
-										<p>19.07: <input type='number' name='data12' value='$data12' /></p>
-										<p>21.07: <input type='number' name='data13' value='$data13' /></p>
-										<p>12.09: <input type='number' name='data14' value='$data14' /></p>
-										<p>27.10: <input type='number' name='data15' value='$data15' /></p>
+										<p>07.01: <input type='text' class='modific' name='data1' value='$data1' /></p>
+										<p>28.01: <input type='text' class='modific' name='data2' value='$data2' /></p>
+										<p>23.02: <input type='text' class='modific' name='data3' value='$data3' /></p>
+										<p>07.03: <input type='text' class='modific' name='data4' value='$data4' /></p>
+										<p>13.03: <input type='text' class='modific' name='data5' value='$data5' /></p>
+										<p>29.03: <input type='text' class='modific' name='data6' value='$data6' /></p>
+										<p>07.04: <input type='text' class='modific' name='data7' value='$data7' /></p>
+										<p>10.04: <input type='text' class='modific' name='data8' value='$data8' /></p>
+										<p>22.04: <input type='text' class='modific' name='data9' value='$data9' /></p>
+										<p>22.05: <input type='text' class='modific' name='data10' value='$data10' /></p>
+										<p>02.06: <input type='text' class='modific' name='data11`' value='$data11' /></p>
+										<p>19.07: <input type='text' class='modific' name='data12' value='$data12' /></p>
+										<p>21.07: <input type='text' class='modific' name='data13' value='$data13' /></p>
+										<p>12.09: <input type='text' class='modific' name='data14' value='$data14' /></p>
+										<p>27.10: <input type='text' class='modific' name='data15' value='$data15' /></p>
 										<input type='submit' value='Сохранить'>
 									</form>"; //biology
 								}
@@ -381,21 +381,21 @@ require_once "config.php";
 									echo "<h3>Обновление оценок</h3>
 									<form method='post'>
 										<input type='hidden' name='id' value='$userid' />
-										<p>14.01: <input type='number' name='data1' value='$data1' /></p>
-										<p>18.01: <input type='number' name='data2' value='$data2' /></p>
-										<p>25.01: <input type='number' name='data3' value='$data3' /></p>
-										<p>12.02: <input type='number' name='data4' value='$data4' /></p>
-										<p>25.03: <input type='number' name='data5' value='$data5' /></p>
-										<p>13.05: <input type='number' name='data6' value='$data6' /></p>
-										<p>20.05: <input type='number' name='data7' value='$data7' /></p>
-										<p>29.05: <input type='number' name='data8' value='$data8' /></p>
-										<p>25.06: <input type='number' name='data9' value='$data9' /></p>
-										<p>17.07: <input type='number' name='data10' value='$data10' /></p>
-										<p>30.08: <input type='number' name='data11' value='$data11' /></p>
-										<p>10.09: <input type='number' name='data12' value='$data12' /></p>
-										<p>18.09: <input type='number' name='data13' value='$data13' /></p>
-										<p>12.10: <input type='number' name='data14' value='$data14' /></p>
-										<p>09.11: <input type='number' name='data15' value='$data15' /></p>
+										<p>14.01: <input type='text' class='modific' name='data1' value='$data1' /></p>
+										<p>18.01: <input type='text' class='modific' name='data2' value='$data2' /></p>
+										<p>25.01: <input type='text' class='modific' name='data3' value='$data3' /></p>
+										<p>12.02: <input type='text' class='modific' name='data4' value='$data4' /></p>
+										<p>25.03: <input type='text' class='modific' name='data5' value='$data5' /></p>
+										<p>13.05: <input type='text' class='modific' name='data6' value='$data6' /></p>
+										<p>20.05: <input type='text' class='modific' name='data7' value='$data7' /></p>
+										<p>29.05: <input type='text' class='modific' name='data8' value='$data8' /></p>
+										<p>25.06: <input type='text' class='modific' name='data9' value='$data9' /></p>
+										<p>17.07: <input type='text' class='modific' name='data10' value='$data10' /></p>
+										<p>30.08: <input type='text' class='modific' name='data11' value='$data11' /></p>
+										<p>10.09: <input type='text' class='modific' name='data12' value='$data12' /></p>
+										<p>18.09: <input type='text' class='modific' name='data13' value='$data13' /></p>
+										<p>12.10: <input type='text' class='modific' name='data14' value='$data14' /></p>
+										<p>09.11: <input type='text' class='modific' name='data15' value='$data15' /></p>
 										<input type='submit' value='Сохранить'>
 									</form>"; //chemistry
 									}
@@ -489,21 +489,21 @@ require_once "config.php";
 									echo "<h3>Обновление оценок</h3>
 									<form method='post'>
 										<input type='hidden' name='id' value='$userid' />
-										<p>03.01: <input type='number' name='data1' value='$data1' /></p>
-										<p>05.01: <input type='number' name='data2' value='$data2' /></p>
-										<p>20.01: <input type='number' name='data3' value='$data3' /></p>
-										<p>14.02: <input type='number' name='data4' value='$data4' /></p>
-										<p>20.03: <input type='number' name='data5' value='$data5' /></p>
-										<p>10.05: <input type='number' name='data6' value='$data6' /></p>
-										<p>02.06: <input type='number' name='data7' value='$data7' /></p>
-										<p>15.07: <input type='number' name='data8' value='$data8' /></p>
-										<p>26.07: <input type='number' name='data9' value='$data9' /></p>
-										<p>01.08: <input type='number' name='data10' value='$data10' /></p>
-										<p>28.08: <input type='number' name='data11' value='$data11' /></p>
-										<p>26.10: <input type='number' name='data12' value='$data12' /></p>
-										<p>09.11: <input type='number' name='data13' value='$data13' /></p>
-										<p>06.12: <input type='number' name='data14' value='$data14' /></p>
-										<p>18.12: <input type='number' name='data15' value='$data15' /></p>
+										<p>03.01: <input type='text' class='modific' name='data1' value='$data1' /></p>
+										<p>05.01: <input type='text' class='modific' name='data2' value='$data2' /></p>
+										<p>20.01: <input type='text' class='modific' name='data3' value='$data3' /></p>
+										<p>14.02: <input type='text' class='modific' name='data4' value='$data4' /></p>
+										<p>20.03: <input type='text' class='modific' name='data5' value='$data5' /></p>
+										<p>10.05: <input type='text' class='modific' name='data6' value='$data6' /></p>
+										<p>02.06: <input type='text' class='modific' name='data7' value='$data7' /></p>
+										<p>15.07: <input type='text' class='modific' name='data8' value='$data8' /></p>
+										<p>26.07: <input type='text' class='modific' name='data9' value='$data9' /></p>
+										<p>01.08: <input type='text' class='modific' name='data10' value='$data10' /></p>
+										<p>28.08: <input type='text' class='modific' name='data11' value='$data11' /></p>
+										<p>26.10: <input type='text' class='modific' name='data12' value='$data12' /></p>
+										<p>09.11: <input type='text' class='modific' name='data13' value='$data13' /></p>
+										<p>06.12: <input type='text' class='modific' name='data14' value='$data14' /></p>
+										<p>18.12: <input type='text' class='modific' name='data15' value='$data15' /></p>
 										<input type='submit' value='Сохранить'>
 									</form>"; //history
 								}

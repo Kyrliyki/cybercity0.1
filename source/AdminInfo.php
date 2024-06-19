@@ -21,7 +21,11 @@
         <div class="right">
             <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content" style="max-width: 900px;">
+//<<<<<<< main
+                <h2>Изменение пользователей</h2>
+//=======
                 <h2>Изменение данных</h2>
+//>>>>>>> main
 				<?php
 				require_once "config.php";
 
