@@ -22,7 +22,7 @@
         <div class="right">
             <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
-                <h2>Change students grades</h2>
+                <h2>Русский язык</h2>
 				<?php
 				require_once "config.php";
 
@@ -32,7 +32,7 @@
 				if($result = $DataBase->query($sql)){
 					echo "<table class='table-2'><thead>
                             <tr>
-                                <th>Surname &nbsp</th>
+                                <th>Фамилия &nbsp</th>
                                 <th>11.01 &nbsp</th>
                                 <th>23.02 &nbsp</th>
                                 <th>29.02 &nbsp</th>
@@ -70,7 +70,7 @@
                                 echo "<td>" . $row["20.09"] . "</td>";
                                 echo "<td>" . $row["08.11"] . "</td>";
                                 echo "<td>" . $row["28.11"] . "</td>";
-                                echo "<td><a href='UpdateGrade.php?id=" . $row["id_users"] . "&object=2'>Change</a></td>";
+                                echo "<td><a href='UpdateGrade.php?id=" . $row["id_users"] . "&object=2'>Изменить</a></td>";
                             echo "</tr>"; //rus
                         }
 					}
@@ -81,7 +81,7 @@
 				}
 				$DataBase->close();
 				?>
-                <a href="../source/MainPage.php">Go back</a>
+                <a href="../source/MainPage.php">Назад</a>
             </div>
         </div>
         <?}
@@ -89,7 +89,7 @@
         <div class="right">
             <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
-                <h2>Change students grades</h2>
+                <h2>История</h2>
 				<?php
 				require_once "config.php";
 
@@ -99,7 +99,7 @@
 				if($result = $DataBase->query($sql)){
 					echo "<table class='table-2'><thead>
                             <tr>
-                                <th>Login &nbsp</th>
+                                <th>Фамилия &nbsp</th>
                                 <th>03.01 &nbsp</th>
                                 <th>05.01 &nbsp</th>
                                 <th>20.01 &nbsp</th>
@@ -137,7 +137,7 @@
                                 echo "<td>" . $row["09.11"] . "</td>";
                                 echo "<td>" . $row["06.12"] . "</td>";
                                 echo "<td>" . $row["18.12"] . "</td>";
-                                echo "<td><a href='UpdateGrade.php?id=" . $row["id_users"] . "&object=5'>Change</a></td>";
+                                echo "<td><a href='UpdateGrade.php?id=" . $row["id_users"] . "&object=5'>Изменить</a></td>";
                                 echo "</tr>"; //history
                         }
 					}
@@ -148,7 +148,7 @@
 				}
 				$DataBase->close();
 				?>
-                <a href="../source/MainPage.php">Go back</a>
+                <a href="../source/MainPage.php">Назад</a>
             </div>
         </div>
         <?}
@@ -156,7 +156,7 @@
         <div class="right">
             <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
-                <h2>Change students grades</h2>
+                <h2>Химия</h2>
 				<?php
 				require_once "config.php";
 
@@ -166,7 +166,7 @@
 				if($result = $DataBase->query($sql)){
 					echo "<table class='table-2'><thead>
                             <tr>
-                                <th>Login &nbsp</th>
+                                <th>Фамилия &nbsp</th>
                                 <th>14.01 &nbsp</th>
                                 <th>18.01 &nbsp</th>
                                 <th>25.01 &nbsp</th>
@@ -202,7 +202,7 @@
                                 echo "<td>" . $row["18.09"] . "</td>";
                                 echo "<td>" . $row["12.10"] . "</td>";
                                 echo "<td>" . $row["09.11"] . "</td>";
-                                echo "<td><a href='UpdateGrade.php?id=" . $row["id_users"] . "&object=4'>Change</a></td>";
+                                echo "<td><a href='UpdateGrade.php?id=" . $row["id_users"] . "&object=4'>Изменить</a></td>";
                                 echo "</tr>"; //chemistry
                         }
 					}
@@ -213,7 +213,7 @@
 				}
 				$DataBase->close();
 				?>
-                <a href="../source/MainPage.php">Go back</a>
+                <a href="../source/MainPage.php">Назад</a>
             </div>
         </div>
         <?}
@@ -221,7 +221,7 @@
         <div class="right">
             <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
-                <h2>Change students grades</h2>
+                <h2>Алгебра</h2>
 				<?php
 				require_once "config.php";
 
@@ -231,7 +231,7 @@
 				if($result = $DataBase->query($sql)){
 					echo "<table class='table-2'><thead>
                             <tr> 
-                                <th>Login &nbsp</th>
+                                <th>Фамилия &nbsp</th>
                                 <th>05.01 &nbsp</th>
                                 <th>08.02 &nbsp</th>
                                 <th>09.02 &nbsp</th>
@@ -267,7 +267,7 @@
                                 echo "<td>" . $row["30.08"] . "</td>";
                                 echo "<td>" . $row["09.09"] . "</td>";
                                 echo "<td>" . $row["07.12"] . "</td>";
-                                echo "<td><a href='UpdateGrade.php?id=" . $row["id_users"] . "&object=1'>Change</a></td>";
+                                echo "<td><a href='UpdateGrade.php?id=" . $row["id_users"] . "&object=1'>Изменить</a></td>";
                             echo "</tr>"; //algebra
                         }
 					}
@@ -278,7 +278,7 @@
 				}
 				$DataBase->close();
 				?>
-                <a href="../source/MainPage.php">Go back</a>
+                <a href="../source/MainPage.php">Назад</a>
             </div>
         </div>
         <?}
@@ -286,7 +286,7 @@
         <div class="right">
             <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
-                <h2>Change students grades</h2>
+                <h2>Биология</h2>
 				<?php
 				require_once "config.php";
 
@@ -296,7 +296,7 @@
 				if($result = $DataBase->query($sql)){
 					echo "<table class='table-2'><thead>
                             <tr>
-                                <th>Login &nbsp</th>
+                                <th>Фамилия &nbsp</th>
                                 <th>07.01 &nbsp</th>
                                 <th>28.01 &nbsp</th>
                                 <th>23.02 &nbsp</th>
@@ -332,7 +332,7 @@
                                 echo "<td>" . $row["21.07"] . "</td>";
                                 echo "<td>" . $row["12.09"] . "</td>";
                                 echo "<td>" . $row["27.10"] . "</td>";
-                                echo "<td><a href='UpdateGrade.php?id=" . $row["id_users"] . "&object=3'>Change</a></td>";
+                                echo "<td><a href='UpdateGrade.php?id=" . $row["id_users"] . "&object=3'>Изменить</a></td>";
                             echo "</tr>"; //biology
                         }
 					}
@@ -343,7 +343,7 @@
 				}
 				$DataBase->close();
 				?>
-                <a href="../source/MainPage.php">Go back</a>
+                <a href="../source/MainPage.php">Назад</a>
             </div>
         </div>
         <?}?>

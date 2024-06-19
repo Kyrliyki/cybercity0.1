@@ -20,18 +20,22 @@
             </div>
                 <h1>CyberSity</h1>
                 <p>
-                    Welcome to our school's online diary! Here, every student and parent can find all the essential information about current grades, class schedules, upcoming events, and much more. We strive to make the educational process transparent and convenient for everyone involved. Use our tools to stay informed about all school news and achieve success in your studies. Begin your journey to new knowledge with us!
+                    Добро пожаловать в онлайн-дневник нашей школы!
+                    Здесь каждый ученик и учитель может найти всю необходимую информацию о текущих оценках.
+                    Мы стремимся сделать образовательный процесс прозрачным и удобным для всех участников.
+                    Используйте наши инструменты, чтобы быть в курсе всех школьных новостей и добиваться успехов в учебе.
+                    Начните свой путь к новым знаниям вместе с нами!
                 </p>
             </div>
         </div>
         <div class="right">
             <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
-                <h2>Welcome back</h2>
+                <h2>Добро пожаловать</h2>
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                     <input type="text" name="username" id="username" placeholder="Username" required>
                     <input type="password" name="password" id="password" placeholder="Password" required>
-                    <input type="submit" value="Sign in">
+                    <input type="submit" value="Войти">
                 </form>
             </div>
         </div>

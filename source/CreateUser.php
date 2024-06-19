@@ -95,23 +95,23 @@ $dob = mysqli_real_escape_string($DataBase, trim($_POST["dob"]));
     <div class="right">
         <a class="offcanvas"><span></span><span></span><span></span></a>
         <div class="content">
-            <h2>Create a user</h2>
+            <h2>Создание пользователя</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <div class="form-group">
                     <input type="text" name="username" placeholder="Login" required>
                     <input type="password" name="password" placeholder="Password" required>
                 </div>
-                <h2>Personal info</h2>
-                <input type="text" name="surname" placeholder="Last name" required>
-                <input type="text" name="firstname" placeholder="First name" required>
-                <input type="text" name="patronymic" placeholder="Patronymic" required>
-                <label for="dob">Date of birth</label>
+                <h2>Личная информация</h2>
+                <input type="text" name="surname" placeholder="Фамилия" required>
+                <input type="text" name="firstname" placeholder="Имя" required>
+                <input type="text" name="patronymic" placeholder="Отчество" required>
+                <label for="dob">День рождения</label>
                 <input type="date" name="dob" required>
 
 
                 <select id="userType" name="status" required>
                     <option value="">Выберите тип пользователя...</option>
-                    <option value="student">Студент</option>
+                    <option value="student">Ученик</option>
                     <option value="teacher">Учитель</option>
                 </select>
 
@@ -125,9 +125,9 @@ $dob = mysqli_real_escape_string($DataBase, trim($_POST["dob"]));
                 </div>
 
 
-                <input type="submit" value="Create user">
+                <input type="submit" value="Создать пользователя">
             </form>
-            <a href="../source/MainPage.php">Go back</a>
+            <a href="../source/MainPage.php">Назад</a>
         </div>
     </div>
 </div>

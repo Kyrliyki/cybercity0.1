@@ -37,7 +37,7 @@ if (isset($_SESSION["id"])) {
                     if ($result = $DataBase->query($sql)) {
                         echo "<table class='table-2'>
                             <thead><tr>
-                                <th>Surname &nbsp</th>
+                                <th>Фамилия &nbsp</th>
                                 <th>11.01 &nbsp</th>
                                 <th>23.02 &nbsp</th>
                                 <th>29.02 &nbsp</th>
@@ -94,7 +94,7 @@ if (isset($_SESSION["id"])) {
                     if($result = $DataBase->query($sql)){
                         echo "<table class='table-2'>
                                 <thead><tr>
-                                    <th>Login &nbsp</th>
+                                    <th>Фамилия &nbsp</th>
                                     <th>03.01 &nbsp</th>
                                     <th>05.01 &nbsp</th>
                                     <th>20.01 &nbsp</th>
@@ -151,7 +151,7 @@ if (isset($_SESSION["id"])) {
                     if($result = $DataBase->query($sql)){
                         echo "<table class='table-2'>
                                 <thead><tr>
-                                    <th>Login &nbsp</th>
+                                    <th>Фамилия &nbsp</th>
                                     <th>14.01 &nbsp</th>
                                     <th>18.01 &nbsp</th>
                                     <th>25.01 &nbsp</th>
@@ -206,7 +206,7 @@ if (isset($_SESSION["id"])) {
                     if($result = $DataBase->query($sql)){
                         echo "<table class='table-2'>
                                 <thead><tr>
-                                    <th>Login &nbsp</th>
+                                    <th>Фамилия &nbsp</th>
                                     <th>05.01 &nbsp</th>
                                     <th>08.02 &nbsp</th>
                                     <th>09.02 &nbsp</th>
@@ -262,7 +262,7 @@ if (isset($_SESSION["id"])) {
                     if($result = $DataBase->query($sql)){
                         echo "<table class='table-2'>
                                 <thead><tr>
-                                    <th>Login &nbsp</th>
+                                    <th>Фамилия &nbsp</th>
                                     <th>07.01 &nbsp</th>
                                     <th>28.01 &nbsp</th>
                                     <th>23.02 &nbsp</th>
@@ -310,7 +310,7 @@ if (isset($_SESSION["id"])) {
                 }
                 ?>
 
-                <a href="../source/MainPage.php">Go back</a>
+                <a href="../source/MainPage.php">Назад</a>
             </div>
         </div>
 </div>

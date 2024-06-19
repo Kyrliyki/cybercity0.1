@@ -52,7 +52,7 @@ require_once "config.php";
 										$data15 = $row["07.12"];
 										
 									}
-									echo "<h3>Rating updates</h3>
+									echo "<h3>Обновление оценок</h3>
 									<form method='post'>
 										<input type='hidden' name='id' value='$userid' />
 										<p>05.01: <input type='number' name='data1' value='$data1' /></p>
@@ -70,12 +70,12 @@ require_once "config.php";
 										<p>30.08: <input type='number' name='data13' value='$data13' /></p>
 										<p>09.09: <input type='number' name='data14' value='$data14' /></p>
 										<p>07.12: <input type='number' name='data15' value='$data15' /></p>
-										<input type='submit' value='Save'>
+										<input type='submit' value='Сохранить'>
 									</form>"; //algebra
 								}
 							}
 							else{
-								echo "<div>The user was not found</div>";
+								echo "<div>Пользователь не найден</div>";
 							}
 							mysqli_free_result($result);
 						} 
@@ -128,7 +128,7 @@ require_once "config.php";
 							echo "Incorrect data";
 						}
 					?>
-					<a href="../source/AdminGrade.php?id_object=1">Go back</a>
+					<a href="../source/AdminGrade.php?id_object=1">Назад</a>
 				</div>
 			</div>
 			<?}?>
@@ -160,7 +160,7 @@ require_once "config.php";
 										$data14 = $row["08.11"];
 										$data15 = $row["28.11"];
 									}
-									echo "<h3>Rating updates</h3>
+									echo "<h3>Обновление оценок</h3>
 									<form method='post'>
 										<input type='hidden' name='id' value='$userid' />
 										<p>11.01: <input type='number' name='data1' value='$data1' /></p>
@@ -178,12 +178,12 @@ require_once "config.php";
 										<p>20.09: <input type='number' name='data13' value='$data13' /></p>
 										<p>08.11: <input type='number' name='data14' value='$data14' /></p>
 										<p>28.11: <input type='number' name='data15' value='$data15' /></p>
-										<input type='submit' value='Save'>
+										<input type='submit' value='Сохранить'>
 									</form>"; //rus
 								}
 							}
 							else{
-								echo "<div>The user was not found</div>";
+								echo "<div>Пользователь не найден</div>";
 							}
 							mysqli_free_result($result);
 						} 
@@ -235,7 +235,7 @@ require_once "config.php";
 							echo "Incorrect data";
 						}
 					?>
-					<a href="../source/MainPage.php">Go back</a>
+					<a href="../source/MainPage.php">Назад</a>
 				</div>
 			</div>
 			<?}?>
@@ -270,7 +270,7 @@ require_once "config.php";
 										$data15 = $row["27.10"];
 										
 									}
-									echo "<h3>Rating updates</h3>
+									echo "<h3>Обновление оценок</h3>
 									<form method='post'>
 										<input type='hidden' name='id' value='$userid' />
 										<p>07.01: <input type='number' name='data1' value='$data1' /></p>
@@ -288,12 +288,12 @@ require_once "config.php";
 										<p>21.07: <input type='number' name='data13' value='$data13' /></p>
 										<p>12.09: <input type='number' name='data14' value='$data14' /></p>
 										<p>27.10: <input type='number' name='data15' value='$data15' /></p>
-										<input type='submit' value='Save'>
+										<input type='submit' value='Сохранить'>
 									</form>"; //biology
 								}
 							}
 							else{
-								echo "<div>The user was not found</div>";
+								echo "<div>Пользователь не найден</div>";
 							}
 							mysqli_free_result($result);
 						} 
@@ -346,7 +346,7 @@ require_once "config.php";
 							echo "Incorrect data";
 						}
 					?>
-					<a href="../source/MainPage.php">Go back</a>
+					<a href="../source/MainPage.php">Назад</a>
 				</div>
 			</div>
 			<?}?>
@@ -378,7 +378,7 @@ require_once "config.php";
 										$data14 = $row["12.10"];
 										$data15 = $row["09.11"];
 									}
-									echo "<h3>Rating updates</h3>
+									echo "<h3>Обновление оценок</h3>
 									<form method='post'>
 										<input type='hidden' name='id' value='$userid' />
 										<p>14.01: <input type='number' name='data1' value='$data1' /></p>
@@ -396,12 +396,12 @@ require_once "config.php";
 										<p>18.09: <input type='number' name='data13' value='$data13' /></p>
 										<p>12.10: <input type='number' name='data14' value='$data14' /></p>
 										<p>09.11: <input type='number' name='data15' value='$data15' /></p>
-										<input type='submit' value='Save'>
+										<input type='submit' value='Сохранить'>
 									</form>"; //chemistry
 									}
 							}
 							else{
-								echo "<div>The user was not found</div>";
+								echo "<div>Пользователь не найден</div>";
 							}
 							mysqli_free_result($result);
 						} 
@@ -454,7 +454,7 @@ require_once "config.php";
 							echo "Incorrect data";
 						}
 					?>
-					<a href="../source/MainPage.php">Go back</a>
+					<a href="../source/MainPage.php">Назад</a>
 				</div>
 			</div>
 			<?}?>
@@ -486,7 +486,7 @@ require_once "config.php";
 										$data14 = $row["06.12"];
 										$data15 = $row["18.12"];
 									}
-									echo "<h3>Rating updates</h3>
+									echo "<h3>Обновление оценок</h3>
 									<form method='post'>
 										<input type='hidden' name='id' value='$userid' />
 										<p>03.01: <input type='number' name='data1' value='$data1' /></p>
@@ -504,12 +504,12 @@ require_once "config.php";
 										<p>09.11: <input type='number' name='data13' value='$data13' /></p>
 										<p>06.12: <input type='number' name='data14' value='$data14' /></p>
 										<p>18.12: <input type='number' name='data15' value='$data15' /></p>
-										<input type='submit' value='Save'>
+										<input type='submit' value='Сохранить'>
 									</form>"; //history
 								}
 							}
 							else{
-								echo "<div>The user was not found</div>";
+								echo "<div>Пользователь не найден</div>";
 							}
 							mysqli_free_result($result);
 						} 
@@ -562,7 +562,7 @@ require_once "config.php";
 							echo "Incorrect data";
 						}
 					?>
-					<a href="../source/MainPage.php">Go back</a>
+					<a href="../source/MainPage.php">Назад</a>
 				</div>
 			</div>
 			<?}?>
