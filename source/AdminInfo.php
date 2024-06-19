@@ -2,8 +2,7 @@
 <html>
 <head>
 <title>Информация</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8"/>
+<meta charset="utf-8" />
 </head>
 <link rel="stylesheet" href="main.css">
 <body>
@@ -19,8 +18,7 @@
             </div>
         </div>
         <div class="right">
-            <a class="offcanvas"><span></span><span></span><span></span></a>
-            <div class="content">
+            <div class="content" style="max-width: 900px;">
                 <h2>Change students grades</h2>
 				<?php
 				require_once "config.php";
@@ -82,19 +80,16 @@
 
 
 				if($result = $DataBase->query($sql)){?>
-						<table class="table-2">
-							<thead>
-                                <tr>
-                                    <th>id &nbsp</th>
-                                    <th>Login &nbsp</th>
-                                    <th>Status &nbsp</th>
-                                    <th>Last name &nbsp</th>
-                                    <th>Name &nbsp</th>
-                                    <th>Patronymic &nbsp</th>
-                                    <th>Date of birth &nbsp</th>
-                                </tr>
-							</thead>
-                            <tbody>
+						<table>
+							<tr>
+								<th>id &nbsp</th>
+								<th>Login &nbsp</th>
+								<th>Status &nbsp</th>
+								<th>Last name &nbsp</th>
+								<th>Name &nbsp</th>
+								<th>Patronymic &nbsp</th>
+								<th>Date of birth &nbsp</th>
+							</tr>
 					<?php
 					foreach($result as $row){
 						if ($row["status"] != 'admin'){
@@ -117,7 +112,7 @@
 						}
 						
 					}
-					echo "</tbody></table>";
+					echo "</table>";
 					$result->free();
 				} else{
 					echo "Error: " . $DataBase->error;
@@ -130,8 +125,6 @@
             </div>
         </div>
     </div>
-
-
 	<script src="main.js"></script>
 </body>
 </html>

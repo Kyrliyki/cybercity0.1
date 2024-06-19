@@ -1,6 +1,6 @@
 [data-theme="dark"] {
     .left {
-
+        flex: 0.25;
         background-color: #20232A;
         padding: 20px;
         display: flex;
@@ -10,7 +10,7 @@
         color: #FFF;
     }
     .right {
-
+        flex: 0.75;
         background-color: #0D0E11;
         display: flex;
         justify-content: center;
@@ -20,13 +20,10 @@
     input[type="date"]::-webkit-calendar-picker-indicator {
         filter: invert(1);
     }
-    .offcanvas span {
-        background-color: white;
-    }
 }
 [data-theme="light"] {
     .left {
-
+        flex: 0.25;
         background-color: #aab5d1;
         color:#0D0E11;
         padding: 20px;
@@ -36,15 +33,12 @@
         flex-direction: column;
     }
     .right {
-
+        flex: 0.75;
         background-color: #ffffff;
         color:#0D0E11;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .offcanvas span {
-        background-color: #0D0E11;
     }
     
 }
@@ -64,27 +58,23 @@
     color: #eee; /* Цвет текста для темной темы */
     
 }
-html {
-    box-sizing: border-box;
-}
-*, *:before, *:after {
-    box-sizing: border-box;
-}
-body {
 
+body {
+    display: flex;
+    min-height: 100vh;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-
+    
     
 }
 .container {
-    display: grid;
-    min-height: 100vh;
-    width: 100%;
-    grid-template-columns: 280px 1fr;
-
+    display: flex;
+    flex: 1;
 }
+
+
 .content {
+    max-width: 400px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -109,9 +99,6 @@ th, td {
 }
 th {
     background-color: #3E3F45;
-}
-td a {
-    margin: 0;
 }
 a {
     display: inline-block;
@@ -279,7 +266,7 @@ input:checked + .slider:before {
 
 }
 .hidden {
-    display: none !important;
+    display: none;
 }
 .grid-container label {
     display: flex;
@@ -290,185 +277,4 @@ input:checked + .slider:before {
 .grid-container h2 {
     grid-column: 1 / span 3;
 }
-
-/* для таблиц*/
-.table-2 {
-    width: 100%;
-}
-
-.table-2 thead,
-.table-2 tbody,
-.table-2 thead th {
-    display: block;
-}
-
-.table-2 thead {
-    float: left;
-}
-
-.table-2 tbody{
-    overflow-x: auto;
-}
-
-.table-2 tbody tr {
-    display: table-cell;
-    border-right: 1px solid #ccc;
-}
-
-
-
-.table-2 td{
-    display: block;
-    min-height: 39.34px;
-}
-
-
-
-.table-2 {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-}
-
-
-.table-2 tr {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-.table-2 td {
-    flex: 1;
-
-}
-
-.table-2 thead tr{
-    display: flex;
-    flex-direction: column;
-}
-
-/* offcanvas */
-
-.offcanvas {
-    display: none;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border: none;
-    margin: 0 0;
-    padding: 0 0;
-    top: 5px;
-    left: 5px;
-    background-color: transparent;
-}
-a.offcanvas:hover {
-    background-color: transparent;
-}
-.offcanvas span {
-    top: 19px;
-    left: 8.5px;
-    position: absolute;
-    width: 23px;
-    height: 2px;
-    transition: transform .3s, opacity .3s;
-}
-.offcanvas span:nth-child(1) {
-    transform: translateY(-10.5px);
-}
-
-.offcanvas span:nth-child(3) {
-    transform: translateY(10.5px);
-}
-
-.offcanvas.open span:nth-child(1) {
-    transform: rotate(-45deg) translateY(0);
-    width: 25px;
-
-}
-
-.offcanvas.open span:nth-child(2) {
-    opacity: 0;
-}
-
-.offcanvas.open span:nth-child(3) {
-    transform: rotate(45deg) translateY(0);
-    width: 25px;
-}
-
-/* адаптив */
-
-@media all and (max-width: 800px) {
-
-    .form-group {
-        flex-direction: column;
-        align-items: center;
-    }
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        position: relative;
-
-    }
-    .table-2 {
-        grid-template-columns: 180px 1fr;
-    }
-    .offcanvas {
-        display: block;
-        z-index: 11;
-    }
-    .right {
-        position: relative;
-        padding-top: 45px;
-    }
-    .left {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        color: white;
-        z-index: 10;
-        padding: 20px 20px 20px 60px !important;
-
-    }
-
-}
-@media all and (max-width: 310px) {
-    .left {
-        padding: 60px 15px 15px 10px !important;
-        height: 100%;
-        margin: 0 0;
-
-    }
-    .left h1 {
-        font-size: 10vw;
-    }
-    .left p {
-        font-size: 7vw;
-    }
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 10px;
-        margin-bottom: 20px;
-
-    }
-    .grid-container h2 {
-        grid-column: 1 / span 1;
-    }
-    .table-2 {
-        grid-template-columns: 100px 1fr;
-    }
-    .table-2 th, .table-2 td {
-        height: 60px;
-        padding: 0 0;
-    }
-}
-
-
-
-
-
-
-
 

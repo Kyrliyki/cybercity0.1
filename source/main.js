@@ -20,51 +20,18 @@ if(currentTheme === 'dark'){
     document.getElementById('themeToggle').checked = true;
     }
 
-
-// типы пользователей
-
 const userTypeSelect = document.getElementById('userType');
 const subjectFields = document.getElementById('subjectFields');
 
-if (userTypeSelect) {
-    userTypeSelect.addEventListener('change', function() {
+userTypeSelect.addEventListener('change', function() {
 
-        subjectFields.classList.add('hidden');
+    subjectFields.classList.add('hidden');
 
-        if (userTypeSelect.value === 'teacher') {
-            subjectFields.classList.remove('hidden');
-        }
-        else {
-            subjectFields.classList.add('hidden')
-        }
-    });
-}
-
-// offcanvas
-document.addEventListener('DOMContentLoaded', function() {
-    const left = document.querySelector('.left');
-    const right = document.querySelector('.right');
-    const breakpoint = 800;
-    const offcanvas = document.querySelector('.offcanvas')
-    function checkWindowSize() {
-        if (window.innerWidth < breakpoint) {
-            left.classList.add('hidden');
-            if (offcanvas.classList.contains('open')) {
-                offcanvas.classList.remove('open');
-            }
-        } else {
-            left.classList.remove('hidden');
-        }
+    if (userTypeSelect.value === 'teacher') {
+        subjectFields.classList.remove('hidden');
     }
-    checkWindowSize();
-    window.addEventListener('resize', checkWindowSize);
-});
-
-document.querySelector('.offcanvas').addEventListener('click', function() {
-    const left = document.querySelector('.left');
-    this.classList.toggle('open');
-    left.classList.toggle('hidden');
-
-
+    else {
+        subjectFields.classList.add('hidden')
+    }
 });
 
