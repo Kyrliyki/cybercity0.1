@@ -40,21 +40,21 @@ require_once "config.php";
 									$patronymic = $row["patronymic"];
 									$dob = $row["dob"];
 								}
-								echo "<h3>User Update</h3>
+								echo "<h3>Изменение пользователя</h3>
 								<form method='post'>
 									<input type='hidden' name='id' value='$userid' />
-									<p>Login: <input type='text' name='username' value='$username' /></p>
-									<p>Status: <input type='text' name='status' value='$status' /></p>
-									<p>Surname: <input type='text' name='surname' value='$surname' /></p>
-									<p>Name: <input type='text' name='firstname' value='$firstname' /></p>
-									<p>Middle name: <input type='text' name='patronymic' value='$patronymic' /></p>
-									<p>Date of birth: <input type='date' name='dob' value='$dob' /></p>
-									<input type='submit' value='Save'>
+									<p>Логин: <input type='text' name='username' value='$username' /></p>
+									<p>Статус: <input type='text' name='status' value='$status' /></p>
+									<p>Фамилия: <input type='text' name='surname' value='$surname' /></p>
+									<p>Имя: <input type='text' name='firstname' value='$firstname' /></p>
+									<p>Отчество: <input type='text' name='patronymic' value='$patronymic' /></p>
+									<p>Дата рождения: <input type='date' name='dob' value='$dob' /></p>
+									<input type='submit' value='Сохранить'>
 								</form>";
 							}
 						}
 						else{
-							echo "<div>The user was not found</div>";
+							echo "<div>Пользователь не найден</div>";
 						}
 						mysqli_free_result($result);
 					} 
@@ -88,7 +88,7 @@ require_once "config.php";
 						echo "Incorrect data";
 					}
 				?>
-					<a href="../source/MainPage.php">Go back</a>
+					<a href="../source/MainPage.php">Назад</a>
 				</div>
 			</div>
 		</div>

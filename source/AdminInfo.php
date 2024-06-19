@@ -21,7 +21,7 @@
         <div class="right">
             <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content" style="max-width: 900px;">
-                <h2>Change students grades</h2>
+                <h2>Изменение оценок</h2>
 				<?php
 				require_once "config.php";
 
@@ -85,12 +85,12 @@
 						<table class="table-2"><thead>
 							<tr>
 								<th>id &nbsp</th>
-								<th>Login &nbsp</th>
-								<th>Status &nbsp</th>
-								<th>Last name &nbsp</th>
-								<th>Name &nbsp</th>
-								<th>Patronymic &nbsp</th>
-								<th>Date of birth &nbsp</th>
+								<th>Логин &nbsp</th>
+								<th>Статус &nbsp</th>
+								<th>Фамилия &nbsp</th>
+								<th>Имя &nbsp</th>
+								<th>Отчество &nbsp</th>
+								<th>Дата рождения &nbsp</th>
 							</tr></thead><tbody>
 					<?php
 					foreach($result as $row){
@@ -103,11 +103,11 @@
 							echo "<td>" . $row["firstname"] . "</td>";
 							echo "<td>" . $row["patronymic"] . "</td>";
 							echo "<td>" . $row["dob"] . "</td>";
-							echo "<td><a href='UpdateInfo.php?id=" . $row["id"] . "'>Change</a></td>";
+							echo "<td><a href='UpdateInfo.php?id=" . $row["id"] . "'>Изменить</a></td>";
 							echo "<td>
 									<form action='DeleteUser.php' method='post'>
 										<input type='hidden' name='id' value='" . $row["id"] . "' />
-										<input type='submit' value='Delete'>
+										<input type='submit' value='Удалить'>
 									</form>
 								</td>";
 							echo "</tr>";
@@ -123,7 +123,7 @@
 
 				$DataBase->close();
 				?>
-                <a href="../source/MainPage.php">Go back</a>
+                <a href="../source/MainPage.php">Назад</a>
             </div>
         </div>
     </div>

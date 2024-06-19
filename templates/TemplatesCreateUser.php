@@ -23,7 +23,7 @@
 			Имя:<input type="text" name="firstname" />
 		</p>
 		<p>
-			Отчесво:<input type="text" name="patronymic" placeholder="Если есть"/>
+			Отчество:<input type="text" name="patronymic" placeholder="Если есть"/>
 		</p>
 		<p>
 			Дата рождения:<input type="date" name="dob" value="2023-04-12" />
