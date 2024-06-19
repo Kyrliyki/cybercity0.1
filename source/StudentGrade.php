@@ -26,7 +26,7 @@ if (isset($_SESSION["id"])) {
         </div>
     </div>
         <div class="right">
-             
+            <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
                 <?php if($_GET["id_object"]==2) {
                     echo "<h2>Русский язык</h2>";

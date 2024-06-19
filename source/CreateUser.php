@@ -78,6 +78,7 @@ $dob = mysqli_real_escape_string($DataBase, trim($_POST["dob"]));
     <title>Create User</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="container">
@@ -92,6 +93,7 @@ $dob = mysqli_real_escape_string($DataBase, trim($_POST["dob"]));
         </div>
     </div>
     <div class="right">
+        <a class="offcanvas"><span></span><span></span><span></span></a>
         <div class="content">
             <h2>Create a user</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">

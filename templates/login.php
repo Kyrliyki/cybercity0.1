@@ -25,6 +25,7 @@
             </div>
         </div>
         <div class="right">
+            <a class="offcanvas"><span></span><span></span><span></span></a>
             <div class="content">
                 <h2>Welcome back</h2>
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
