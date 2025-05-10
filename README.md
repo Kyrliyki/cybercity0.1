@@ -5,7 +5,7 @@
 Вход через ученика: alex/123, nikitin/987 ,torg/456 ,artem/12345678
 Взод через учителя: Виктор/123
 
-ссылка на сайт: http://noobland.tplinkdns.com/cybercity/source/authenticate.php
+
 
 #Инструкция по эксплуатации.
 
